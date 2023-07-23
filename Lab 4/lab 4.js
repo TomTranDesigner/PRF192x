@@ -1,6 +1,6 @@
 // Lab 4.1
 const describeCountry = (country, population, capitalCity) =>
-  `${country} has ${population} million people and its capital city is ${capitalCity}`;
+  `${country} has ${population} million people and its capital city is ${capitalCity}`; // thay cho function(   )
 console.log(describeCountry(`Finland`, `6`, `Helsinki`));
 console.log(describeCountry(`vietnam`, `97`, `Hanoi`));
 console.log(describeCountry(`Indonesia`, `100`, `Jakarta`));
@@ -60,6 +60,14 @@ const percentages = [
 console.log(percentages);
 
 // Lab 4.6
+let neighbours = ["Vietnam", "China", "Laos", "Cambodia"];
+neighbours.push("Utopia");
+neighbours.pop("Utopia");
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central european country :D");
+}
+neighbours[0] = "Socialist Republic of Vietnam";
+console.log(neighbours);
 
 // Lab 4.7.1
 const calcAverage = (a, b, c) => (a + b + c) / 3;
